@@ -61,7 +61,7 @@ export function register({user, pwd, repeatpwd, type}){
 // 登录
 export function login({user, pwd}){
   if (!user || !pwd) {
-    return errorMsg('用户名密码不允许为空')
+    return errorMsg('用户名密码不允许为空!!!!')
   }
   return dispatch => {
     axios.post('/user/login', { user, pwd }).then(res => {
